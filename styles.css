@@ -1,0 +1,102 @@
+/*Changes the background color of the entire body section*/
+body {
+    background-color: bisque;
+}
+/*Styles the navigation bar with it's color and shaping, while also creating a flex container and stacking the flex items (the links) horizontally*/
+nav {
+    background-color: rgb(255, 216, 168);
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(250, 203, 145);
+    display: flex;
+    flex-direction: row;
+}
+/*Creates the sizing and color of each link on the navigation bar*/
+nav a {
+    font-size: 20px;
+    color: black;
+    padding: 18px 12px 18px 12px;
+}
+/*Removes the underline on the links in navigation bar*/
+nav a:link {
+    text-decoration: none;
+}
+/*Changes background color of link that user is hovering over*/
+nav a:hover {
+    background-color: rgb(250, 203, 145);
+}
+/*Changes background color of link that user is clicking*/
+nav a:active {
+    background-color: antiquewhite;
+}
+/*Brings all h1 tags to the center of the page*/
+h1 {
+    text-align: center;
+}
+/*Brings all elements in this class to the center of the page*/
+.centered-subheadings {
+    text-align: center;
+}
+/*Creates a flex container with even spacing among each list item
+The content wraps and moves to the bottom if the page size decreases 
+The content begins at the top of the flex container*/
+.favs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0px;
+}
+/*Aligns each list item (text and picture) to the center of its own space and removes bullet point that a list item would have*/
+.favs li {
+    text-align: center;
+    list-style-type: none;
+}
+/*Stretches table across whole page while setting shared borders*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+/*Aligns the text to the left of the table cell while creating black border line in the bottom to create sense of seperation
+Also creates spacing with use of padding*/
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+/*Changes the background color of the row user hovers on, but only the rows containing data and not headers*/
+tbody tr:hover {
+    background-color: antiquewhite;
+}
+/*Aligns the textbox and button in the center*/
+form {
+    text-align: center;
+}
+/*Changes background color inside the text box and button*/
+.input {
+    background-color: rgb(255, 216, 168);
+}
+/*Increasing shape, font, and making it rounder
+Increasing the distance between the text box and top of the input section, while also increasing distance between text box and button*/
+#text-box {
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+/*Increases the size of the button, whiile also making it rounder
+Increasing distance between the button and the distance between the button and bottom of input section*/
+#submit {
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+/*Changes background color of the button when hovering over it*/
+#submit:hover {
+    background-color: rgb(250, 203, 145);
+}
+/*Changes background color of the button when clicked*/
+#submit:active {
+    background-color: antiquewhite;
+}

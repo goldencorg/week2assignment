@@ -1,0 +1,61 @@
+<!--Document type declaration-->
+<!DOCTYPE html>
+<!--Root element of the document-->
+<html lang="en">
+<!--Will contain metadata information but can also include name of tab (title tag)-->
+<head>
+    <!--Meta serves as a tool for search engine optimization, to be read by the browser-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale=1.0">
+    <title>Home</title>
+    <!--Links the css file to this HTML document-->
+    <link rel="stylesheet" href="styles.css">
+<!--The following tag closes the head section-->
+</head>
+<!--The body will contain the content of the website/document-->
+<body>
+    <!--The nav will define a section meant to provide navigation links to other parts of the site/document-->
+    <nav>
+        <!--Each a tag will create a link to another page and provides what text to show-->
+        <a href="index.html">Home</a>
+        <a href="table.html">Favorites</a>
+        <a href="form.html">AMA</a>
+    </nav>
+    <!--h1 is meant to define something as the heading-->
+    <h1>Who am I?</h1>
+    <!--h3 is meant to define something as a subheading-->
+    <div class="centered-subheadings">
+        <h3>A Few Facts About Me</h3>
+        <h3 id="down-arrow">↓↓↓↓↓↓↓↓↓</h3>
+    </div>
+    <!--ul creates an unordered list with list items (li tags)-->
+    <ul class="favs">
+        <li>
+            <h4>My dog Simba, a golden retreiver/corgi mix</h4>
+            <!--In this case, my list items will contain a subheading (h4) and an image (img)-->
+            <!--The alt provides alternate text if the image doesn't appear-->
+            <!--The width defines the size of the image-->
+            <!--The source will define what the image will be (can be from an absolute or relative path)-->
+            <img
+                alt="My dog, Simba"
+                height="150px"
+                src="Simba.jpg">
+        </li>
+        <li>
+            <h4>In love with Korean culture</h4>
+            <img
+                alt="Seoul, South Korea"
+                height="150px"
+                src="https://silversea-discover.imgix.net/2022/12/QCRUa0gV-2asunsetinSeoulskyline_1490190263.jpg?auto=compress%2Cformat&ixlib=php-3.3.1">
+        </li>
+        <li>
+            <h4>A decent drummer, inspired by Josh Dun</h4>
+            <img
+                alt="Josh Dun in concert"
+                height="150px"
+                src="https://www.strifemag.com/wp-content/uploads/2023/08/Josh-Dun.jpg">
+        </li>
+    </ul>
+<!--The following two tags close the body and html element-->
+</body>
+</html>
